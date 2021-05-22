@@ -1,0 +1,23 @@
+name: CI
+on: 
+   schedule:
+    - cron:  '6 3 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_AUTH_TOKEN}}" > .npmrc
+      - name: Install Dependencies
+        run: npm ci
+      - name: run main flow
+        run: npm run scrape -- scrape scraper_config/index.yaml
+      - name: Commit and push if it changed
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "Latest data: ${timestamp}" || exit 0
+          git push

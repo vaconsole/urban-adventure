@@ -1,0 +1,11 @@
+# '.container-lg':
+#   sections:
+#     _b: h3
+#     _d:
+#       - title: h3
+#         content: 
+#           - p
+#         list: 
+#           - ul li
+#         links:
+#           - ul a@href

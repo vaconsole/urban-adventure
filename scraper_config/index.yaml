@@ -1,0 +1,11 @@
+urls: #needed
+  - https://www.succulentsandsunshine.com
+directory: './data' # mandary, output directory
+# optional parameters
+recursive:  
+  depth: 2 # maxRecursiveDepth, default 0 then no recursiveness
+  domainFilter: # domainFilter and patternFilter can only pick one
+    - www.succulentsandsunshine.com
+request:
+  userAgent: # default empty if empty then will use a random user agent
+  concurrency: 1 
