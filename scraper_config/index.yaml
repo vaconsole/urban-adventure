@@ -8,7 +8,7 @@ recursive:
     - chrome.google.com/webstore/category
     - chrome.google.com/webstore/detail
 request:
-  userAgent: # default empty if empty then will use a random user agent
+  userAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36
   concurrency: 5 
   renderer: # default empty, no dynamic js site support
     phantom:

@@ -13,7 +13,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: run main flow
-        run: npm run scrape -- scrape scraper_config/index.yaml
+        run: ./scrape.sh
       - name: Commit and push if it changed
         run: |-
           git config user.name "Automated"
