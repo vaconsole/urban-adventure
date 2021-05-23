@@ -1,4 +1,4 @@
-export NODE_OPTIONS=--max_old_space_size=4096
+export NODE_OPTIONS=--max_old_space_size=8192
 npm run scrape -- scrape scraper_config/index.yaml
 
 # npm run parse --silent parse ./data/html/github.com/brillout/awesome-react-components/blob/master/README.md/index.html parser_config/readme.yaml | jq .sections  > data/readme.json
