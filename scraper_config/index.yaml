@@ -3,7 +3,7 @@ urls: #needed
 directory: './data' # mandary, output directory
 # optional parameters
 recursive:  
-  depth: 3 # maxRecursiveDepth, default 0 then no recursiveness, url filers will not come into effect
+  depth: 2 # maxRecursiveDepth, default 0 then no recursiveness, url filers will not come into effect
   patternFilter:
     - chrome.google.com/webstore/category
     - chrome.google.com/webstore/detail
