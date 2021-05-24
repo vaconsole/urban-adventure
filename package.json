@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "@pixelondesign/parser-util": "^1.0.18",
-    "@pixelondesign/scraper-util": "^1.0.24"
+    "@pixelondesign/scraper-util": "^1.0.28"
   }
 }
